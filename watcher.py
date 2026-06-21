@@ -27,6 +27,148 @@ REQUEST_HEADERS = {
     "Upgrade-Insecure-Requests": "1",
 }
 
+# ---------------------------------------------------------------------------
+# Section-based extraction
+#
+# The vacancy page mixes at least 3 different posting layouts (pilot/table
+# postings, paragraph-style "VACANCY ANNOUNCEMENT" postings, and Ethiopian
+# Skylight Hotel table postings), and each one can include any subset of
+# ~8 section headers (AGE LIMIT, LANGUAGE, EMPLOYMENT TYPE, DUTIES &
+# RESPONSIBILITIES, etc.) in varying order. Rather than chasing each format
+# with its own one-off regex, we locate ALL known headers in the flattened
+# text, sort them by position, and slice the content between consecutive
+# headers. That way each field stops cleanly at whichever header actually
+# comes next, instead of running on into unrelated sections.
+#
+# Order matters only where one pattern is a prefix of another at the same
+# position (e.g. "REGISTRATION DATE & PLACE" vs "REGISTRATION DATE") --
+# the more specific/longer pattern must come first so it wins.
+# ---------------------------------------------------------------------------
+_SECTION_DEFS = [
+    ("registration_date_place", r"REGISTRATION\s+DATE\s*(?:&|AND)\s*PLACE\s*:?"),
+    ("registration_place",      r"REGISTRATION\s+PLACES?(?:/LOCATIONS)?\s*:?"),
+    ("registration_date",       r"REGISTRATION\s+DATE\s*:?"),
+    ("employment_type",         r"EMPLOYMENT\s+(?:TYPE|MODALITY)\s*:?"),
+    ("qualifications",          r"QUALIF\w*[\w\s&/]*?REQUIREMENT[S]?\s*:?"),
+    ("age_limit",               r"AGE\s+LIMIT\s*:?"),
+    # "LANGUAGE" as a section header is always followed by "Knowledge of
+    # ET..." on this site. Without that anchor, the pattern also matches
+    # mid-sentence mentions like "fluency in speaking French language" and
+    # truncates qualifications right before the word "language" appears.
+    ("language",                r"\bLANGUAGE\s*:?\s*(?=Knowledge of ET)"),
+    ("duties",                  r"DUTIES\s*(?:&|AND)?\s*RESPONSIBILITIES\s*:?"),
+    ("contact_info",            r"CONTACT/APPLICATION\s+INFORMATION\s*:?"),
+    # This boilerplate "bring your documents" paragraph appears right before
+    # the final disclaimer NB on almost every local posting. Without this as
+    # a boundary, the registration place swallows the whole paragraph.
+    ("doc_checklist",           r"Interested applicants must bring"),
+    # Word-start anchor so "N.B"/"NB" only matches the actual marker, not an
+    # incidental "...n Bachelor..." style adjacency elsewhere in the text.
+    ("nb",                      r"\bN\.?\s*B\.?\s*[:\.]?"),
+]
+
+_COMBINED = re.compile(
+    "|".join(f"(?P<{name}>{pattern})" for name, pattern in _SECTION_DEFS),
+    re.IGNORECASE,
+)
+
+_DATE_THEN_PLACE = re.compile(r"^(?P<date>.*?\d{4}[,.]?)\s*(?:at\s+)?(?=[A-Z][a-z])(?P<rest>.+)$")
+
+_BOILERPLATE_MARKERS = ("false information", "termination from the process")
+
+_EMPTY_DETAILS = {"reg_date": "", "place": "", "qualifications": "", "age_limit": "", "nb": ""}
+
+
+def _truncate_clean(text, limit):
+    """Truncate at a word boundary instead of slicing mid-word/mid-sentence."""
+    text = text.strip()
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    last_space = cut.rfind(" ")
+    if last_space > limit * 0.6:
+        cut = cut[:last_space]
+    return cut.rstrip(" .,;:") + "…"
+
+
+def extract_structured_details(detail_div):
+    if not detail_div:
+        return dict(_EMPTY_DETAILS)
+
+    raw = detail_div.get_text(" ", strip=True)
+    raw = re.sub(r"\s+", " ", raw).strip()
+
+    raw_matches = list(_COMBINED.finditer(raw))
+
+    # "Age limit" sometimes appears as its own bold header (e.g. "AGE LIMIT:
+    # 18-35...") and sometimes as a clause glued onto the NB sentence (e.g.
+    # "N.B: Age limit; 18-35..."). In the second case it isn't a real section
+    # boundary -- drop it so that text stays part of the NB content instead
+    # of being split into an orphan fragment.
+    matches = []
+    for m in raw_matches:
+        if (
+            m.lastgroup == "age_limit"
+            and matches
+            and matches[-1].lastgroup == "nb"
+            and (m.start() - matches[-1].end()) <= 15
+        ):
+            continue
+        matches.append(m)
+
+    sections = {}  # name -> list of content strings, in order of appearance
+    for i, m in enumerate(matches):
+        name = m.lastgroup
+        start = m.end()
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(raw)
+        sections.setdefault(name, []).append(raw[start:end].strip())
+
+    qualifications = _truncate_clean(sections.get("qualifications", [""])[0], 600)
+    age_limit = _truncate_clean(sections.get("age_limit", [""])[0], 120)
+
+    # First NB that isn't just the generic legal disclaimer repeated on
+    # almost every posting -- that one carries no useful info for a reader.
+    nb = ""
+    for candidate in sections.get("nb", []):
+        if not any(marker in candidate.lower() for marker in _BOILERPLATE_MARKERS):
+            nb = _truncate_clean(candidate, 200)
+            break
+
+    reg_date = ""
+    place = ""
+    if "registration_date_place" in sections:
+        section_text = sections["registration_date_place"][0]
+        section_text = re.sub(r"^From\s+", "", section_text, flags=re.IGNORECASE).strip()
+        at_split = re.split(r"\s+at\s+", section_text, maxsplit=1, flags=re.IGNORECASE)
+        if len(at_split) > 1:
+            reg_date = at_split[0].strip()
+            place = _truncate_clean(at_split[1], 150)
+        else:
+            # No "at" connector -- date and place were likely separate
+            # bullet items (e.g. "June 4, 2026 – June 10, 2026 Ethiopian
+            # Airlines HQ..."). Split right after the last year in the date.
+            dp_match = _DATE_THEN_PLACE.match(section_text)
+            if dp_match:
+                reg_date = dp_match.group("date").strip()
+                place = _truncate_clean(dp_match.group("rest"), 150)
+            else:
+                reg_date = section_text.strip()
+    else:
+        if "registration_date" in sections:
+            reg_date = re.sub(
+                r"^From\s+", "", sections["registration_date"][0], flags=re.IGNORECASE
+            ).strip()
+        if "registration_place" in sections:
+            place = _truncate_clean(sections["registration_place"][0], 150)
+
+    return {
+        "reg_date":       reg_date,
+        "place":          place,
+        "qualifications": qualifications,
+        "age_limit":      age_limit,
+        "nb":             nb,
+    }
+
 
 def fetch_postings():
     resp = requests.get(URL, headers=REQUEST_HEADERS, timeout=30)
@@ -65,52 +207,6 @@ def fetch_postings():
     return postings
 
 
-def extract_structured_details(detail_div):
-    if not detail_div:
-        return {"reg_date": "", "place": "", "qualifications": "", "nb": ""}
-
-    raw = detail_div.get_text(" ", strip=True)
-    raw = re.sub(r"\s+", " ", raw).strip()
-
-    # Qualifications — stop before NB or REGISTRATION DATE section
-    qual_match = re.search(
-        r"QUALIF\w*[\w\s&/]*?REQUIREMENT[S]?\s*:?\s*(.*?)(?=N\.?\s*B\.?|REGISTRATION DATE|$)",
-        raw, re.IGNORECASE
-    )
-    if qual_match:
-        q = qual_match.group(1).strip()
-        qualifications = q[:500] if len(q) > 500 else q
-    else:
-        qualifications = ""
-
-    # Registration date and place — "From X up to Y at Z Interested applicants..."
-    reg_section = re.search(
-        r"REGISTRATION DATE[^F]*?From\s+(.*?)(?=Interested applicants|$)",
-        raw, re.IGNORECASE
-    )
-    reg_date = ""
-    place    = ""
-    if reg_section:
-        section_text = reg_section.group(1).strip()
-        at_split = re.split(r"\s+at\s+", section_text, maxsplit=1, flags=re.IGNORECASE)
-        reg_date = at_split[0].strip()
-        place    = at_split[1].strip()[:150] if len(at_split) > 1 else ""
-
-    # NB — first occurrence only (age limit etc), stop before second NB
-    nb_match = re.search(
-        r"N\.?\s*B\.?\s*[:\.]?\s*(.*?)(?=N\.?\s*B\.?|REGISTRATION DATE|$)",
-        raw, re.IGNORECASE
-    )
-    nb = nb_match.group(1).strip()[:200] if nb_match else ""
-
-    return {
-        "reg_date":       reg_date,
-        "place":          place,
-        "qualifications": qualifications,
-        "nb":             nb,
-    }
-
-
 def escape_html(text):
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
@@ -119,30 +215,45 @@ def format_with_ai(posting):
     cat_emoji = "🌍" if posting["category"] == "International" else "🇪🇹"
     quals     = posting.get("qualifications", "")
 
-    # AI only summarizes qualifications in plain text
+    bullets = []
     try:
         resp = groq_client.chat.completions.create(
             model="llama-3.1-8b-instant",
             messages=[{
                 "role": "user",
                 "content": (
-                    "Summarize the key qualifications and experience required for this role "
-                    "in exactly 2 plain sentences. No bullet points, no formatting.\n\n"
+                    "Extract the key qualifications for this job as 3-5 short bullet "
+                    "points (education, experience, key skills). Each bullet must be "
+                    "under 12 words. Return ONLY the bullets, one per line, each "
+                    "starting with '-'. No intro, no closing remarks, no extra "
+                    "commentary.\n\n"
                     f"{quals}"
                 )
             }],
-            max_tokens=120,
+            max_tokens=150,
         )
-        summary = resp.choices[0].message.content.strip()
+        summary_raw = resp.choices[0].message.content.strip()
+        bullets = [
+            re.sub(r"^[-•*]\s*", "", line).strip()
+            for line in summary_raw.splitlines()
+            if line.strip()
+        ]
+        bullets = [_truncate_clean(b, 100) for b in bullets if b][:5]
     except Exception:
-        summary = quals[:200] if quals else "See full listing for details."
+        bullets = []
+
+    if not bullets:
+        # Fallback: split the raw qualifications into short fragments instead
+        # of dumping the whole passage in one block.
+        bullets = [s.strip() for s in re.split(r"(?<=[.;])\s+", quals) if s.strip()][:4]
+        bullets = bullets or ["See full listing for details."]
 
     lines = [
-        f"✈️ <b>Ethiopian Airlines — Job Vacancy</b>",
-        f"",
+        "✈️ <b>Ethiopian Airlines — Job Vacancy</b>",
+        "",
         f"<b>{escape_html(posting['position'])}</b>",
         f"{cat_emoji} <i>{escape_html(posting['category'])}</i>",
-        f"",
+        "",
     ]
 
     if posting.get("reg_date"):
@@ -153,20 +264,24 @@ def format_with_ai(posting):
     if posting.get("place"):
         lines.append(f"📍 <b>Place of Registration:</b> {escape_html(posting['place'])}")
 
+    if posting.get("age_limit"):
+        lines.append(f"🎯 <b>Age Limit:</b> {escape_html(posting['age_limit'])}")
+
     lines += [
-        f"",
-        f"📋 <b>Requirements:</b>",
-        f"{escape_html(summary)}",
+        "",
+        "📋 <b>Requirements:</b>",
     ]
+    for bullet in bullets:
+        lines.append(f"• {escape_html(bullet)}")
 
     if posting.get("nb"):
         lines += [
-            f"",
+            "",
             f"⚠️ <b>NB:</b> {escape_html(posting['nb'])}",
         ]
 
     lines += [
-        f"",
+        "",
         f'<a href="{URL}">View full listing and apply →</a>',
     ]
 
