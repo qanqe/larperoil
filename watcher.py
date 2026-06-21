@@ -14,12 +14,10 @@ STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "seen_post
 
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID   = int(os.environ["TELEGRAM_CHAT_ID"])
-
-
-groq_client = Groq(api_key=os.environ["GROQ_API_KEY"])
+groq_client        = Groq(api_key=os.environ["GROQ_API_KEY"])
 
 TELEGRAM_MAX_LENGTH = 4096
-DETAIL_LENGTH = 600
+DETAIL_LENGTH       = 600
 
 REQUEST_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
@@ -76,32 +74,42 @@ def extract_details(detail_div):
     return raw[:DETAIL_LENGTH].rsplit(" ", 1)[0] + "..."
 
 
+def escape_html(text):
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def format_with_ai(posting):
-    raw = (
-        f"Position: {posting['position']}\n"
-        f"Category: {posting['category']}\n"
-        f"Closing Date: {posting['closing_date']}\n"
-        f"Details: {posting.get('raw_details', 'Not available')}"
-    )
+    raw        = posting.get("raw_details", "")
+    cat_emoji  = "🌍" if posting["category"] == "International" else "🇪🇹"
 
-    prompt = (
-        "Format this Ethiopian Airlines job vacancy as a clean, professional Telegram announcement.\n\n"
-        "RULES:\n"
-        "- Use ONLY these Telegram HTML tags: <b>, <i>, <a href='...'>\n"
-        "- No markdown, no asterisks, no backticks, no bullet dashes\n"
-        "- Structure: opening emoji + bold title, then sections for Role, Requirements, Deadline\n"
-        "- Professional but readable tone\n"
-        f"- End with: <a href=\"{URL}\">Apply on Ethiopian Airlines</a>\n"
-        "- Return ONLY the message text, nothing else\n\n"
-        f"Data:\n{raw}"
-    )
+    try:
+        prompt = (
+            "In exactly 2 sentences, summarize what this job requires. "
+            "Plain text only, no formatting, no bullet points.\n\n"
+            f"{raw}"
+        )
+        resp = groq_client.chat.completions.create(
+            model="llama-3.1-8b-instant",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=120,
+        )
+        summary = resp.choices[0].message.content.strip()
+    except Exception:
+        summary = raw[:200] if raw else "See full listing for details."
 
-    resp = groq_client.chat.completions.create(
-        model="llama-3.1-8b-instant",
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=800,
+    return (
+        f"✈️ <b>Ethiopian Airlines — Job Vacancy</b>\n"
+        f"\n"
+        f"<b>{escape_html(posting['position'])}</b>\n"
+        f"\n"
+        f"{cat_emoji} <i>{escape_html(posting['category'])}</i>\n"
+        f"📅 <b>Deadline:</b> {escape_html(posting['closing_date'])}\n"
+        f"\n"
+        f"📋 <b>About the Role:</b>\n"
+        f"{escape_html(summary)}\n"
+        f"\n"
+        f'<a href="{URL}">View full listing and apply →</a>'
     )
-    return resp.choices[0].message.content.strip()
 
 
 def load_seen():
