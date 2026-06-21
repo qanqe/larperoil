@@ -17,7 +17,6 @@ TELEGRAM_CHAT_ID   = int(os.environ["TELEGRAM_CHAT_ID"])
 groq_client        = Groq(api_key=os.environ["GROQ_API_KEY"])
 
 TELEGRAM_MAX_LENGTH = 4096
-DETAIL_LENGTH       = 600
 
 REQUEST_HEADERS = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
@@ -53,25 +52,61 @@ def fetch_postings():
         href     = link.get("href", "")
         category = "International" if "collapseOne" in href else "Local"
 
-        detail_div  = soup.find(id=href.lstrip("#"))
-        raw_details = extract_details(detail_div) if detail_div else ""
+        detail_div = soup.find(id=href.lstrip("#"))
+        details    = extract_structured_details(detail_div)
 
         postings[key] = {
             "position":     position,
             "closing_date": closing,
             "category":     category,
-            "raw_details":  raw_details,
+            **details,
         }
 
     return postings
 
 
-def extract_details(detail_div):
+def extract_structured_details(detail_div):
+    if not detail_div:
+        return {"reg_date": "", "place": "", "qualifications": "", "nb": ""}
+
     raw = detail_div.get_text(" ", strip=True)
     raw = re.sub(r"\s+", " ", raw).strip()
-    if len(raw) <= DETAIL_LENGTH:
-        return raw
-    return raw[:DETAIL_LENGTH].rsplit(" ", 1)[0] + "..."
+
+    # Registration date range
+    reg_match = re.search(
+        r"Registration Date\s*:\s*(.*?)(?=Place\s*(?:of\s*)?Registration|QUALIF|N\.?\s*B\.?|$)",
+        raw, re.IGNORECASE
+    )
+    reg_date = reg_match.group(1).strip() if reg_match else ""
+
+    # Place of registration
+    place_match = re.search(
+        r"Place\s*(?:of\s*)?Registration\s*:\s*(.*?)(?=QUALIF|N\.?\s*B\.?|$)",
+        raw, re.IGNORECASE
+    )
+    place = place_match.group(1).strip() if place_match else ""
+
+    # Qualifications
+    qual_match = re.search(
+        r"QUALIF\w*[\w\s&]*?REQUIREMENT[S]?\s*:?\s*(.*?)(?=N\.?\s*B\.?|Duty|Terms|$)",
+        raw, re.IGNORECASE
+    )
+    if qual_match:
+        q = qual_match.group(1).strip()
+        qualifications = q[:600] if len(q) > 600 else q
+    else:
+        qualifications = ""
+
+    # NB
+    nb_match = re.search(r"N\.?\s*B\.?\s*[:\.]?\s*(.*?)$", raw, re.IGNORECASE)
+    nb = nb_match.group(1).strip() if nb_match else ""
+
+    return {
+        "reg_date":      reg_date,
+        "place":         place,
+        "qualifications": qualifications,
+        "nb":            nb,
+    }
 
 
 def escape_html(text):
@@ -79,37 +114,61 @@ def escape_html(text):
 
 
 def format_with_ai(posting):
-    raw        = posting.get("raw_details", "")
-    cat_emoji  = "🌍" if posting["category"] == "International" else "🇪🇹"
+    cat_emoji = "🌍" if posting["category"] == "International" else "🇪🇹"
+    quals     = posting.get("qualifications", "")
 
+    # AI only summarizes qualifications in plain text
     try:
-        prompt = (
-            "In exactly 2 sentences, summarize what this job requires. "
-            "Plain text only, no formatting, no bullet points.\n\n"
-            f"{raw}"
-        )
         resp = groq_client.chat.completions.create(
             model="llama-3.1-8b-instant",
-            messages=[{"role": "user", "content": prompt}],
+            messages=[{
+                "role": "user",
+                "content": (
+                    "Summarize the key qualifications and experience required for this role "
+                    "in exactly 2 plain sentences. No bullet points, no formatting.\n\n"
+                    f"{quals}"
+                )
+            }],
             max_tokens=120,
         )
         summary = resp.choices[0].message.content.strip()
     except Exception:
-        summary = raw[:200] if raw else "See full listing for details."
+        summary = quals[:200] if quals else "See full listing for details."
 
-    return (
-        f"✈️ <b>Ethiopian Airlines — Job Vacancy</b>\n"
-        f"\n"
-        f"<b>{escape_html(posting['position'])}</b>\n"
-        f"\n"
-        f"{cat_emoji} <i>{escape_html(posting['category'])}</i>\n"
-        f"📅 <b>Deadline:</b> {escape_html(posting['closing_date'])}\n"
-        f"\n"
-        f"📋 <b>About the Role:</b>\n"
-        f"{escape_html(summary)}\n"
-        f"\n"
-        f'<a href="{URL}">View full listing and apply →</a>'
-    )
+    lines = [
+        f"✈️ <b>Ethiopian Airlines — Job Vacancy</b>",
+        f"",
+        f"<b>{escape_html(posting['position'])}</b>",
+        f"{cat_emoji} <i>{escape_html(posting['category'])}</i>",
+        f"",
+    ]
+
+    if posting.get("reg_date"):
+        lines.append(f"📅 <b>Registration Period:</b> {escape_html(posting['reg_date'])}")
+    elif posting.get("closing_date"):
+        lines.append(f"📅 <b>Closing Date:</b> {escape_html(posting['closing_date'])}")
+
+    if posting.get("place"):
+        lines.append(f"📍 <b>Place of Registration:</b> {escape_html(posting['place'])}")
+
+    lines += [
+        f"",
+        f"📋 <b>Requirements:</b>",
+        f"{escape_html(summary)}",
+    ]
+
+    if posting.get("nb"):
+        lines += [
+            f"",
+            f"⚠️ <b>NB:</b> {escape_html(posting['nb'])}",
+        ]
+
+    lines += [
+        f"",
+        f'<a href="{URL}">View full listing and apply →</a>',
+    ]
+
+    return "\n".join(lines)
 
 
 def load_seen():
