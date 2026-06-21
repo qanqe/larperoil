@@ -5,7 +5,7 @@ import sys
 import time
 from datetime import datetime
 
-import google.generativeai as genai
+from google import genai
 import requests
 from bs4 import BeautifulSoup
 
@@ -15,8 +15,7 @@ STATE_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), "seen_post
 TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 TELEGRAM_CHAT_ID   = int(os.environ["TELEGRAM_CHAT_ID"])
 
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
-gemini = genai.GenerativeModel("gemini-2.0-flash")
+gemini = genai.Client(api_key=os.environ["GEMINI_API_KEY"])
 
 TELEGRAM_MAX_LENGTH = 4096
 DETAIL_LENGTH = 600
@@ -94,7 +93,7 @@ def format_with_ai(posting):
         f"Data:\n{raw}"
     )
 
-    resp = gemini.generate_content(prompt)
+    resp = gemini.models.generate_content(model="gemini-2.0-flash", contents=prompt)
     return resp.text.strip()
 
 
