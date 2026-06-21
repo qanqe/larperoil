@@ -72,40 +72,42 @@ def extract_structured_details(detail_div):
     raw = detail_div.get_text(" ", strip=True)
     raw = re.sub(r"\s+", " ", raw).strip()
 
-    # Registration date range
-    reg_match = re.search(
-        r"Registration Date\s*:\s*(.*?)(?=Place\s*(?:of\s*)?Registration|QUALIF|N\.?\s*B\.?|$)",
-        raw, re.IGNORECASE
-    )
-    reg_date = reg_match.group(1).strip() if reg_match else ""
-
-    # Place of registration
-    place_match = re.search(
-        r"Place\s*(?:of\s*)?Registration\s*:\s*(.*?)(?=QUALIF|N\.?\s*B\.?|$)",
-        raw, re.IGNORECASE
-    )
-    place = place_match.group(1).strip() if place_match else ""
-
-    # Qualifications
+    # Qualifications — stop before NB or REGISTRATION DATE section
     qual_match = re.search(
-        r"QUALIF\w*[\w\s&]*?REQUIREMENT[S]?\s*:?\s*(.*?)(?=N\.?\s*B\.?|Duty|Terms|$)",
+        r"QUALIF\w*[\w\s&/]*?REQUIREMENT[S]?\s*:?\s*(.*?)(?=N\.?\s*B\.?|REGISTRATION DATE|$)",
         raw, re.IGNORECASE
     )
     if qual_match:
         q = qual_match.group(1).strip()
-        qualifications = q[:600] if len(q) > 600 else q
+        qualifications = q[:500] if len(q) > 500 else q
     else:
         qualifications = ""
 
-    # NB
-    nb_match = re.search(r"N\.?\s*B\.?\s*[:\.]?\s*(.*?)$", raw, re.IGNORECASE)
-    nb = nb_match.group(1).strip() if nb_match else ""
+    # Registration date and place — "From X up to Y at Z Interested applicants..."
+    reg_section = re.search(
+        r"REGISTRATION DATE[^F]*?From\s+(.*?)(?=Interested applicants|$)",
+        raw, re.IGNORECASE
+    )
+    reg_date = ""
+    place    = ""
+    if reg_section:
+        section_text = reg_section.group(1).strip()
+        at_split = re.split(r"\s+at\s+", section_text, maxsplit=1, flags=re.IGNORECASE)
+        reg_date = at_split[0].strip()
+        place    = at_split[1].strip()[:150] if len(at_split) > 1 else ""
+
+    # NB — first occurrence only (age limit etc), stop before second NB
+    nb_match = re.search(
+        r"N\.?\s*B\.?\s*[:\.]?\s*(.*?)(?=N\.?\s*B\.?|REGISTRATION DATE|$)",
+        raw, re.IGNORECASE
+    )
+    nb = nb_match.group(1).strip()[:200] if nb_match else ""
 
     return {
-        "reg_date":      reg_date,
-        "place":         place,
+        "reg_date":       reg_date,
+        "place":          place,
         "qualifications": qualifications,
-        "nb":            nb,
+        "nb":             nb,
     }
 
 
