@@ -1,1 +1,137 @@
-{}
+{
+  "expat captain b767": {
+    "position": "Expat Captain B767",
+    "closing_date": "Open",
+    "category": "International"
+  },
+  "contract admin expert(1)": {
+    "position": "Contract Admin Expert(1)",
+    "closing_date": "June 25, 2026",
+    "category": "International"
+  },
+  "manager of orat management": {
+    "position": "Manager of ORAT Management",
+    "closing_date": "June 19, 2026",
+    "category": "International"
+  },
+  "head of technical and project controls": {
+    "position": "Head of Technical and Project Controls",
+    "closing_date": "June 19, 2026",
+    "category": "International"
+  },
+  "conops expert": {
+    "position": "CONOPS Expert",
+    "closing_date": "June 21, 2026",
+    "category": "International"
+  },
+  "executive chef in-flight catering (indian)": {
+    "position": "Executive Chef In-flight Catering (Indian)",
+    "closing_date": "June 12, 2026",
+    "category": "International"
+  },
+  "expat captain a350": {
+    "position": "Expat Captain A350",
+    "closing_date": "Open",
+    "category": "International"
+  },
+  "expat captain b777/787": {
+    "position": "Expat Captain B777/787",
+    "closing_date": "Open",
+    "category": "International"
+  },
+  "expat captain b737": {
+    "position": "Expat Captain B737",
+    "closing_date": "Open",
+    "category": "International"
+  },
+  "medical receptionist": {
+    "position": "MEDICAL RECEPTIONIST",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "associate language instructor": {
+    "position": "ASSOCIATE LANGUAGE INSTRUCTOR",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "assistant catering attendant": {
+    "position": "Assistant Catering Attendant",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "jr. duty free product handler": {
+    "position": "JR. Duty Free Product Handler",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "micro biologist": {
+    "position": "Micro Biologist",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "billing and collection officer": {
+    "position": "BILLING AND COLLECTION OFFICER",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "fire & rescue officer i": {
+    "position": "Fire & Rescue Officer I",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "french language speaking customer service associate": {
+    "position": "French Language Speaking Customer Service Associate",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "industrial engineer": {
+    "position": "Industrial Engineer",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "security supervisor": {
+    "position": "Security Supervisor",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "structural engineer": {
+    "position": "STRUCTURAL ENGINEER",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "senior quantity surveyor": {
+    "position": "SENIOR QUANTITY SURVEYOR",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "department head aerospace management & operations": {
+    "position": "Department Head Aerospace Management & Operations",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "laboratory technician": {
+    "position": "LABORATORY TECHNICIAN",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "radiology technologist": {
+    "position": "RADIOLOGY TECHNOLOGIST",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "pharmacist": {
+    "position": "PHARMACIST",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "assistant material controller": {
+    "position": "Assistant Material Controller",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "reporting specialist": {
+    "position": "REPORTING SPECIALIST",
+    "closing_date": "Unknown",
+    "category": "Local"
+  }
+}
