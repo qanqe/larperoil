@@ -9,26 +9,6 @@
     "closing_date": "June 25, 2026",
     "category": "International"
   },
-  "manager of orat management": {
-    "position": "Manager of ORAT Management",
-    "closing_date": "June 19, 2026",
-    "category": "International"
-  },
-  "head of technical and project controls": {
-    "position": "Head of Technical and Project Controls",
-    "closing_date": "June 19, 2026",
-    "category": "International"
-  },
-  "conops expert": {
-    "position": "CONOPS Expert",
-    "closing_date": "June 21, 2026",
-    "category": "International"
-  },
-  "executive chef in-flight catering (indian)": {
-    "position": "Executive Chef In-flight Catering (Indian)",
-    "closing_date": "June 12, 2026",
-    "category": "International"
-  },
   "expat captain a350": {
     "position": "Expat Captain A350",
     "closing_date": "Open",
@@ -44,93 +24,93 @@
     "closing_date": "Open",
     "category": "International"
   },
-  "medical receptionist": {
-    "position": "MEDICAL RECEPTIONIST",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "associate language instructor": {
-    "position": "ASSOCIATE LANGUAGE INSTRUCTOR",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "assistant catering attendant": {
-    "position": "Assistant Catering Attendant",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "jr. duty free product handler": {
-    "position": "JR. Duty Free Product Handler",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "micro biologist": {
-    "position": "Micro Biologist",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "billing and collection officer": {
-    "position": "BILLING AND COLLECTION OFFICER",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
   "fire & rescue officer i": {
     "position": "Fire & Rescue Officer I",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "french language speaking customer service associate": {
-    "position": "French Language Speaking Customer Service Associate",
+  "e-dms expert": {
+    "position": "E-DMS EXPERT",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "industrial engineer": {
-    "position": "Industrial Engineer",
+  "lenders & investors liaison coordinator": {
+    "position": "Lenders & Investors Liaison Coordinator",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "security supervisor": {
-    "position": "Security Supervisor",
+  "medical receptionist": {
+    "position": "MEDICAL RECEPTIONIST",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "structural engineer": {
-    "position": "STRUCTURAL ENGINEER",
+  "adjunct professor of aircraft structures": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT STRUCTURES",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "senior quantity surveyor": {
-    "position": "SENIOR QUANTITY SURVEYOR",
+  "adjunct professor of aircraft stability and control": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT STABILITY AND CONTROL",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "department head aerospace management & operations": {
-    "position": "Department Head Aerospace Management & Operations",
+  "adjunct professor of aircraft propulsion": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT PROPULSION",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "laboratory technician": {
-    "position": "LABORATORY TECHNICIAN",
+  "adjunct professor of aircraft maintenance practices": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT MAINTENANCE PRACTICES",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "radiology technologist": {
-    "position": "RADIOLOGY TECHNOLOGIST",
+  "adjunct professor of aircraft electrical systems": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT ELECTRICAL SYSTEMS",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "pharmacist": {
-    "position": "PHARMACIST",
+  "adjunct professor of aircraft communication & navigation systems": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT COMMUNICATION & NAVIGATION SYSTEMS",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "assistant material controller": {
-    "position": "Assistant Material Controller",
+  "adjunct professor of aerodynamics": {
+    "position": "ADJUNCT PROFESSOR OF AERODYNAMICS",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "reporting specialist": {
-    "position": "REPORTING SPECIALIST",
+  "adjunct professor of accounting.": {
+    "position": "ADJUNCT PROFESSOR OF ACCOUNTING.",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of unmanned aircraft systems": {
+    "position": "ADJUNCT PROFESSOR OF UNMANNED AIRCRAFT SYSTEMS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of principles of resource sequencing and scheduling": {
+    "position": "ADJUNCT PROFESSOR OF PRINCIPLES OF RESOURCE SEQUENCING AND SCHEDULING",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of piston engines and propellers": {
+    "position": "ADJUNCT PROFESSOR OF PISTON ENGINES AND PROPELLERS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of managerial economics": {
+    "position": "ADJUNCT PROFESSOR OF MANAGERIAL ECONOMICS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of managerial finance": {
+    "position": "ADJUNCT PROFESSOR OF MANAGERIAL FINANCE",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of mechanisms of machinery": {
+    "position": "ADJUNCT PROFESSOR OF MECHANISMS OF MACHINERY",
     "closing_date": "Unknown",
     "category": "Local"
   }
