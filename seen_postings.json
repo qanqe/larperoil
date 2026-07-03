@@ -24,6 +24,31 @@
     "closing_date": "Open",
     "category": "International"
   },
+  "facility manager": {
+    "position": "Facility Manager",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "finance associate": {
+    "position": "Finance Associate",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "finance executive": {
+    "position": "Finance Executive",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "food & beverage manager": {
+    "position": "Food & Beverage Manager",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "hse engineer": {
+    "position": "HSE Engineer",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "fire & rescue officer i": {
     "position": "Fire & Rescue Officer I",
     "closing_date": "Unknown",
@@ -81,36 +106,6 @@
   },
   "adjunct professor of accounting.": {
     "position": "ADJUNCT PROFESSOR OF ACCOUNTING.",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of unmanned aircraft systems": {
-    "position": "ADJUNCT PROFESSOR OF UNMANNED AIRCRAFT SYSTEMS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of principles of resource sequencing and scheduling": {
-    "position": "ADJUNCT PROFESSOR OF PRINCIPLES OF RESOURCE SEQUENCING AND SCHEDULING",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of piston engines and propellers": {
-    "position": "ADJUNCT PROFESSOR OF PISTON ENGINES AND PROPELLERS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of managerial economics": {
-    "position": "ADJUNCT PROFESSOR OF MANAGERIAL ECONOMICS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of managerial finance": {
-    "position": "ADJUNCT PROFESSOR OF MANAGERIAL FINANCE",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of mechanisms of machinery": {
-    "position": "ADJUNCT PROFESSOR OF MECHANISMS OF MACHINERY",
     "closing_date": "Unknown",
     "category": "Local"
   }
