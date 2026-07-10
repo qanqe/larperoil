@@ -1,28 +1,43 @@
 {
   "expat captain b767": {
     "position": "Expat Captain B767",
-    "closing_date": "Open",
+    "closing_date": "Unknown",
     "category": "International"
   },
   "contract admin expert(1)": {
     "position": "Contract Admin Expert(1)",
-    "closing_date": "June 25, 2026",
+    "closing_date": "Unknown",
     "category": "International"
   },
   "expat captain a350": {
     "position": "Expat Captain A350",
-    "closing_date": "Open",
+    "closing_date": "Unknown",
     "category": "International"
   },
   "expat captain b777/787": {
     "position": "Expat Captain B777/787",
-    "closing_date": "Open",
+    "closing_date": "Unknown",
     "category": "International"
   },
   "expat captain b737": {
     "position": "Expat Captain B737",
-    "closing_date": "Open",
+    "closing_date": "Unknown",
     "category": "International"
+  },
+  "driver i": {
+    "position": "Driver I",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "associate language instructor": {
+    "position": "ASSOCIATE LANGUAGE INSTRUCTOR",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "security supervisor": {
+    "position": "Security Supervisor",
+    "closing_date": "Unknown",
+    "category": "Local"
   },
   "facility manager": {
     "position": "Facility Manager",
@@ -91,21 +106,6 @@
   },
   "adjunct professor of aircraft electrical systems": {
     "position": "ADJUNCT PROFESSOR OF AIRCRAFT ELECTRICAL SYSTEMS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft communication & navigation systems": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT COMMUNICATION & NAVIGATION SYSTEMS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aerodynamics": {
-    "position": "ADJUNCT PROFESSOR OF AERODYNAMICS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of accounting.": {
-    "position": "ADJUNCT PROFESSOR OF ACCOUNTING.",
     "closing_date": "Unknown",
     "category": "Local"
   }
