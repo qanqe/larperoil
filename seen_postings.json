@@ -24,6 +24,26 @@
     "closing_date": "Unknown",
     "category": "International"
   },
+  "senior accountant i": {
+    "position": "Senior Accountant I",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "assistant admin & finance officer": {
+    "position": "ASSISTANT ADMIN & FINANCE OFFICER",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "gym instructor": {
+    "position": "GYM INSTRUCTOR",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "manager it services for bishoftu international airport project management office": {
+    "position": "Manager IT Services for Bishoftu International Airport Project Management office",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "driver i": {
     "position": "Driver I",
     "closing_date": "Unknown",
@@ -86,26 +106,6 @@
   },
   "adjunct professor of aircraft structures": {
     "position": "ADJUNCT PROFESSOR OF AIRCRAFT STRUCTURES",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft stability and control": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT STABILITY AND CONTROL",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft propulsion": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT PROPULSION",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft maintenance practices": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT MAINTENANCE PRACTICES",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft electrical systems": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT ELECTRICAL SYSTEMS",
     "closing_date": "Unknown",
     "category": "Local"
   }
