@@ -24,6 +24,41 @@
     "closing_date": "Unknown",
     "category": "International"
   },
+  "financial controller": {
+    "position": "Financial Controller",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "mgr. finance-eh": {
+    "position": "Mgr. Finance-EH",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "manager procurement & warehouse management -eh.": {
+    "position": "Manager Procurement & Warehouse Management -EH.",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "manager ict -eh": {
+    "position": "Manager ICT -EH",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "head human resources": {
+    "position": "Head Human Resources",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "chief security -eh": {
+    "position": "Chief Security -EH",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "painter": {
+    "position": "PAINTER",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "senior accountant i": {
     "position": "Senior Accountant I",
     "closing_date": "Unknown",
@@ -44,68 +79,38 @@
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "driver i": {
-    "position": "Driver I",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "associate language instructor": {
-    "position": "ASSOCIATE LANGUAGE INSTRUCTOR",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "security supervisor": {
-    "position": "Security Supervisor",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "facility manager": {
-    "position": "Facility Manager",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "finance associate": {
-    "position": "Finance Associate",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "finance executive": {
-    "position": "Finance Executive",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "food & beverage manager": {
-    "position": "Food & Beverage Manager",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "hse engineer": {
-    "position": "HSE Engineer",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "fire & rescue officer i": {
-    "position": "Fire & Rescue Officer I",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "e-dms expert": {
-    "position": "E-DMS EXPERT",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "lenders & investors liaison coordinator": {
-    "position": "Lenders & Investors Liaison Coordinator",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "medical receptionist": {
-    "position": "MEDICAL RECEPTIONIST",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
   "adjunct professor of aircraft structures": {
     "position": "ADJUNCT PROFESSOR OF AIRCRAFT STRUCTURES",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of aircraft stability and control": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT STABILITY AND CONTROL",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of aircraft propulsion": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT PROPULSION",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of aircraft maintenance practices": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT MAINTENANCE PRACTICES",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of aircraft electrical systems": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT ELECTRICAL SYSTEMS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of aircraft communication & navigation systems": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT COMMUNICATION & NAVIGATION SYSTEMS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of aerodynamics": {
+    "position": "ADJUNCT PROFESSOR OF AERODYNAMICS",
     "closing_date": "Unknown",
     "category": "Local"
   }
