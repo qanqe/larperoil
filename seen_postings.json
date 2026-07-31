@@ -1,4 +1,24 @@
 {
+  "sas engineer (main buildings, gtc & atc)": {
+    "position": "SAS Engineer (Main Buildings, GTC & ATC)",
+    "closing_date": "Unknown",
+    "category": "International"
+  },
+  "airport planning & engineering expert": {
+    "position": "Airport Planning & Engineering expert",
+    "closing_date": "Unknown",
+    "category": "International"
+  },
+  "bhs expert (baggage handling system)": {
+    "position": "BHS Expert (Baggage Handling System)",
+    "closing_date": "Unknown",
+    "category": "International"
+  },
+  "sas engineer (supporting facilities & ancillary buildings)": {
+    "position": "SAS Engineer (Supporting Facilities & Ancillary Buildings)",
+    "closing_date": "Unknown",
+    "category": "International"
+  },
   "expat captain b767": {
     "position": "Expat Captain B767",
     "closing_date": "Unknown",
@@ -23,6 +43,51 @@
     "position": "Expat Captain B737",
     "closing_date": "Unknown",
     "category": "International"
+  },
+  "et sponsored trainee cabin crew": {
+    "position": "ET SPONSORED TRAINEE CABIN CREW",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "trainee aircraft mechanic (et-sponsored)": {
+    "position": "TRAINEE AIRCRAFT MECHANIC (ET-SPONSORED)",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "trainee a/c powerplant technician (et-sponsored)": {
+    "position": "TRAINEE A/C POWERPLANT TECHNICIAN (ET-SPONSORED)",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "trainee a/c avionics technician (et-sponsored)": {
+    "position": "TRAINEE A/C AVIONICS TECHNICIAN (ET-SPONSORED)",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "trainee a/c airframe technician (et-sponsored)": {
+    "position": "TRAINEE A/C AIRFRAME TECHNICIAN (ET-SPONSORED)",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "trainee a/c cabin maintenance technician (et-sponsored)": {
+    "position": "TRAINEE A/C CABIN MAINTENANCE TECHNICIAN (ET-SPONSORED)",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "trainee a/c structure technician (et-sponsored)": {
+    "position": "TRAINEE A/C STRUCTURE TECHNICIAN (ET-SPONSORED)",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "trainee a/c maintenance technician (et-sponsored)": {
+    "position": "TRAINEE A/C MAINTENANCE TECHNICIAN (ET-SPONSORED)",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "hydrologist": {
+    "position": "Hydrologist",
+    "closing_date": "Unknown",
+    "category": "Local"
   },
   "financial controller": {
     "position": "Financial Controller",
@@ -56,61 +121,6 @@
   },
   "painter": {
     "position": "PAINTER",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "senior accountant i": {
-    "position": "Senior Accountant I",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "assistant admin & finance officer": {
-    "position": "ASSISTANT ADMIN & FINANCE OFFICER",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "gym instructor": {
-    "position": "GYM INSTRUCTOR",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "manager it services for bishoftu international airport project management office": {
-    "position": "Manager IT Services for Bishoftu International Airport Project Management office",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft structures": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT STRUCTURES",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft stability and control": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT STABILITY AND CONTROL",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft propulsion": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT PROPULSION",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft maintenance practices": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT MAINTENANCE PRACTICES",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft electrical systems": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT ELECTRICAL SYSTEMS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aircraft communication & navigation systems": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT COMMUNICATION & NAVIGATION SYSTEMS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aerodynamics": {
-    "position": "ADJUNCT PROFESSOR OF AERODYNAMICS",
     "closing_date": "Unknown",
     "category": "Local"
   }
