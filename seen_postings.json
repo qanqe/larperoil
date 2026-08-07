@@ -44,6 +44,31 @@
     "closing_date": "Unknown",
     "category": "International"
   },
+  "junior desktop technician": {
+    "position": "JUNIOR DESKTOP TECHNICIAN",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "administrative assistant general manager lodge and resorts": {
+    "position": "ADMINISTRATIVE ASSISTANT GENERAL MANAGER LODGE AND RESORTS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "associate language instructor": {
+    "position": "ASSOCIATE LANGUAGE INSTRUCTOR",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "spa therapist": {
+    "position": "Spa Therapist",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "bartender": {
+    "position": "Bartender",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "et sponsored trainee cabin crew": {
     "position": "ET SPONSORED TRAINEE CABIN CREW",
     "closing_date": "Unknown",
@@ -96,31 +121,6 @@
   },
   "mgr. finance-eh": {
     "position": "Mgr. Finance-EH",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "manager procurement & warehouse management -eh.": {
-    "position": "Manager Procurement & Warehouse Management -EH.",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "manager ict -eh": {
-    "position": "Manager ICT -EH",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "head human resources": {
-    "position": "Head Human Resources",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "chief security -eh": {
-    "position": "Chief Security -EH",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "painter": {
-    "position": "PAINTER",
     "closing_date": "Unknown",
     "category": "Local"
   }
