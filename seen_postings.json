@@ -44,6 +44,31 @@
     "closing_date": "Unknown",
     "category": "International"
   },
+  "telephone operator": {
+    "position": "TELEPHONE OPERATOR",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "mgr. finance-eh": {
+    "position": "Mgr. Finance-EH",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "financial controller": {
+    "position": "Financial Controller",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "et sponsored trainee cabin crew": {
+    "position": "ET SPONSORED TRAINEE CABIN CREW",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "lodge manager": {
+    "position": "Lodge Manager",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "junior desktop technician": {
     "position": "JUNIOR DESKTOP TECHNICIAN",
     "closing_date": "Unknown",
@@ -66,11 +91,6 @@
   },
   "bartender": {
     "position": "Bartender",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "et sponsored trainee cabin crew": {
-    "position": "ET SPONSORED TRAINEE CABIN CREW",
     "closing_date": "Unknown",
     "category": "Local"
   },
@@ -106,21 +126,6 @@
   },
   "trainee a/c maintenance technician (et-sponsored)": {
     "position": "TRAINEE A/C MAINTENANCE TECHNICIAN (ET-SPONSORED)",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "hydrologist": {
-    "position": "Hydrologist",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "financial controller": {
-    "position": "Financial Controller",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "mgr. finance-eh": {
-    "position": "Mgr. Finance-EH",
     "closing_date": "Unknown",
     "category": "Local"
   }
