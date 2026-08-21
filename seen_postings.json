@@ -1,4 +1,9 @@
 {
+  "adjunct professor of critical thinking": {
+    "position": "Adjunct Professor of Critical Thinking",
+    "closing_date": "Unknown",
+    "category": "International"
+  },
   "sas engineer (main buildings, gtc & atc)": {
     "position": "SAS Engineer (Main Buildings, GTC & ATC)",
     "closing_date": "Unknown",
@@ -44,48 +49,68 @@
     "closing_date": "Unknown",
     "category": "International"
   },
-  "telephone operator": {
-    "position": "TELEPHONE OPERATOR",
+  "chef de partie": {
+    "position": "Chef De Partie",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "mgr. finance-eh": {
-    "position": "Mgr. Finance-EH",
+  "children's activities coordinator": {
+    "position": "Children's Activities Coordinator",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "financial controller": {
-    "position": "Financial Controller",
+  "commis iii": {
+    "position": "Commis III",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "et sponsored trainee cabin crew": {
-    "position": "ET SPONSORED TRAINEE CABIN CREW",
+  "commis ii": {
+    "position": "Commis II",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "lodge manager": {
-    "position": "Lodge Manager",
+  "chef de partie- pastry": {
+    "position": "Chef De Partie- Pastry",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "junior desktop technician": {
-    "position": "JUNIOR DESKTOP TECHNICIAN",
+  "pastry chef": {
+    "position": "Pastry Chef",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "administrative assistant general manager lodge and resorts": {
-    "position": "ADMINISTRATIVE ASSISTANT GENERAL MANAGER LODGE AND RESORTS",
+  "business centre agent": {
+    "position": "Business Centre Agent",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "associate language instructor": {
-    "position": "ASSOCIATE LANGUAGE INSTRUCTOR",
+  "supervisor public area": {
+    "position": "Supervisor Public Area",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "spa therapist": {
-    "position": "Spa Therapist",
+  "meeting concierge": {
+    "position": "Meeting Concierge",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "hostess / host / receptionist": {
+    "position": "Hostess / Host / Receptionist",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "concierge supervisor": {
+    "position": "Concierge Supervisor",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "concierge agent": {
+    "position": "Concierge Agent",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "duty manager": {
+    "position": "Duty Manager",
     "closing_date": "Unknown",
     "category": "Local"
   },
@@ -94,38 +119,28 @@
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "trainee aircraft mechanic (et-sponsored)": {
-    "position": "TRAINEE AIRCRAFT MECHANIC (ET-SPONSORED)",
+  "bus boy / girl": {
+    "position": "Bus Boy / GIRL",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "trainee a/c powerplant technician (et-sponsored)": {
-    "position": "TRAINEE A/C POWERPLANT TECHNICIAN (ET-SPONSORED)",
+  "accountant": {
+    "position": "Accountant",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "trainee a/c avionics technician (et-sponsored)": {
-    "position": "TRAINEE A/C AVIONICS TECHNICIAN (ET-SPONSORED)",
+  "executive chef": {
+    "position": "Executive Chef",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "trainee a/c airframe technician (et-sponsored)": {
-    "position": "TRAINEE A/C AIRFRAME TECHNICIAN (ET-SPONSORED)",
+  "driver": {
+    "position": "Driver",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "trainee a/c cabin maintenance technician (et-sponsored)": {
-    "position": "TRAINEE A/C CABIN MAINTENANCE TECHNICIAN (ET-SPONSORED)",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "trainee a/c structure technician (et-sponsored)": {
-    "position": "TRAINEE A/C STRUCTURE TECHNICIAN (ET-SPONSORED)",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "trainee a/c maintenance technician (et-sponsored)": {
-    "position": "TRAINEE A/C MAINTENANCE TECHNICIAN (ET-SPONSORED)",
+  "marketing officer": {
+    "position": "Marketing Officer",
     "closing_date": "Unknown",
     "category": "Local"
   }
