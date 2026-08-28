@@ -49,8 +49,28 @@
     "closing_date": "Unknown",
     "category": "International"
   },
+  "assistant industrial facilities painter": {
+    "position": "Assistant Industrial Facilities Painter",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "chef de partie": {
     "position": "Chef De Partie",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "senior network technician": {
+    "position": "SENIOR NETWORK TECHNICIAN",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "mgr. finance-eh": {
+    "position": "Mgr. Finance-EH",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "financial controller": {
+    "position": "Financial Controller",
     "closing_date": "Unknown",
     "category": "Local"
   },
@@ -116,31 +136,6 @@
   },
   "bartender": {
     "position": "Bartender",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "bus boy / girl": {
-    "position": "Bus Boy / GIRL",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "accountant": {
-    "position": "Accountant",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "executive chef": {
-    "position": "Executive Chef",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "driver": {
-    "position": "Driver",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "marketing officer": {
-    "position": "Marketing Officer",
     "closing_date": "Unknown",
     "category": "Local"
   }
