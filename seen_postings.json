@@ -1,29 +1,4 @@
 {
-  "adjunct professor of critical thinking": {
-    "position": "Adjunct Professor of Critical Thinking",
-    "closing_date": "Unknown",
-    "category": "International"
-  },
-  "sas engineer (main buildings, gtc & atc)": {
-    "position": "SAS Engineer (Main Buildings, GTC & ATC)",
-    "closing_date": "Unknown",
-    "category": "International"
-  },
-  "airport planning & engineering expert": {
-    "position": "Airport Planning & Engineering expert",
-    "closing_date": "Unknown",
-    "category": "International"
-  },
-  "bhs expert (baggage handling system)": {
-    "position": "BHS Expert (Baggage Handling System)",
-    "closing_date": "Unknown",
-    "category": "International"
-  },
-  "sas engineer (supporting facilities & ancillary buildings)": {
-    "position": "SAS Engineer (Supporting Facilities & Ancillary Buildings)",
-    "closing_date": "Unknown",
-    "category": "International"
-  },
   "expat captain b767": {
     "position": "Expat Captain B767",
     "closing_date": "Unknown",
@@ -49,93 +24,38 @@
     "closing_date": "Unknown",
     "category": "International"
   },
-  "assistant industrial facilities painter": {
-    "position": "Assistant Industrial Facilities Painter",
+  "adjunct professor of aviation security system": {
+    "position": "ADJUNCT PROFESSOR OF AVIATION SECURITY SYSTEM",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "chef de partie": {
-    "position": "Chef De Partie",
+  "adjunct professor of aircraft material and hardware": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT MATERIAL AND HARDWARE",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "senior network technician": {
-    "position": "SENIOR NETWORK TECHNICIAN",
+  "adjunct professor of aircraft structure i": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT STRUCTURE I",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "mgr. finance-eh": {
-    "position": "Mgr. Finance-EH",
+  "adjunct professor of aircraft structure ii": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT STRUCTURE II",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "financial controller": {
-    "position": "Financial Controller",
+  "adjunct professor of airframe system ii": {
+    "position": "ADJUNCT PROFESSOR OF AIRFRAME SYSTEM II",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "children's activities coordinator": {
-    "position": "Children's Activities Coordinator",
+  "jr. flight dispatcher": {
+    "position": "Jr. Flight Dispatcher",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "commis iii": {
-    "position": "Commis III",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "commis ii": {
-    "position": "Commis II",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "chef de partie- pastry": {
-    "position": "Chef De Partie- Pastry",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "pastry chef": {
-    "position": "Pastry Chef",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "business centre agent": {
-    "position": "Business Centre Agent",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "supervisor public area": {
-    "position": "Supervisor Public Area",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "meeting concierge": {
-    "position": "Meeting Concierge",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "hostess / host / receptionist": {
-    "position": "Hostess / Host / Receptionist",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "concierge supervisor": {
-    "position": "Concierge Supervisor",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "concierge agent": {
-    "position": "Concierge Agent",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "duty manager": {
-    "position": "Duty Manager",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "bartender": {
-    "position": "Bartender",
+  "security supervisor": {
+    "position": "Security Supervisor",
     "closing_date": "Unknown",
     "category": "Local"
   }
