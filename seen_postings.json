@@ -1,9 +1,4 @@
 {
-  "expat captain b767": {
-    "position": "Expat Captain B767",
-    "closing_date": "Unknown",
-    "category": "International"
-  },
   "contract admin expert(1)": {
     "position": "Contract Admin Expert(1)",
     "closing_date": "Unknown",
@@ -24,38 +19,103 @@
     "closing_date": "Unknown",
     "category": "International"
   },
-  "adjunct professor of aviation security system": {
-    "position": "ADJUNCT PROFESSOR OF AVIATION SECURITY SYSTEM",
+  "it officer": {
+    "position": "IT Officer",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "adjunct professor of aircraft material and hardware": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT MATERIAL AND HARDWARE",
+  "assistant industrial mechanic": {
+    "position": "ASSISTANT INDUSTRIAL MECHANIC",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "adjunct professor of aircraft structure i": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT STRUCTURE I",
+  "professor of mechanical engineering": {
+    "position": "Professor of Mechanical Engineering",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "adjunct professor of aircraft structure ii": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT STRUCTURE II",
+  "professor of mathematics": {
+    "position": "Professor of Mathematics",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "adjunct professor of airframe system ii": {
-    "position": "ADJUNCT PROFESSOR OF AIRFRAME SYSTEM II",
+  "professor of software engineering": {
+    "position": "Professor of Software Engineering",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "jr. flight dispatcher": {
-    "position": "Jr. Flight Dispatcher",
+  "professor of english": {
+    "position": "Professor of English",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "security supervisor": {
-    "position": "Security Supervisor",
+  "quality auditor": {
+    "position": "Quality Auditor",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of data science for aviation management": {
+    "position": "ADJUNCT PROFESSOR OF DATA SCIENCE FOR AVIATION MANAGEMENT",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of critical thinking": {
+    "position": "ADJUNCT PROFESSOR OF CRITICAL THINKING",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of computer programming using python": {
+    "position": "ADJUNCT PROFESSOR OF COMPUTER PROGRAMMING USING PYTHON",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of basic aerodynamics": {
+    "position": "ADJUNCT PROFESSOR OF BASIC AERODYNAMICS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of aircraft maintenance practice": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT MAINTENANCE PRACTICE",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of research methods for engineers": {
+    "position": "ADJUNCT PROFESSOR OF RESEARCH METHODS FOR ENGINEERS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of probability and statistics": {
+    "position": "ADJUNCT PROFESSOR OF PROBABILITY AND STATISTICS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of piston engines and propellers": {
+    "position": "ADJUNCT PROFESSOR OF PISTON ENGINES AND PROPELLERS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of operations research": {
+    "position": "ADJUNCT PROFESSOR OF OPERATIONS RESEARCH",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of introduction to emerging technology": {
+    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO EMERGING TECHNOLOGY",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of introduction to economics": {
+    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO ECONOMICS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of introduction to aeronautical science": {
+    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO AERONAUTICAL SCIENCE",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of introduction to aeronautical engineering": {
+    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO AERONAUTICAL ENGINEERING",
     "closing_date": "Unknown",
     "category": "Local"
   }
