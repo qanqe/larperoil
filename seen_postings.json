@@ -19,6 +19,36 @@
     "closing_date": "Unknown",
     "category": "International"
   },
+  "industrial relation officer": {
+    "position": "Industrial Relation Officer",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "medical receptionist": {
+    "position": "MEDICAL RECEPTIONIST",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "trainee - industrial electrician": {
+    "position": "TRAINEE - INDUSTRIAL ELECTRICIAN",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "trainee - industrial mechanic": {
+    "position": "TRAINEE - INDUSTRIAL MECHANIC",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "nurse": {
+    "position": "Nurse",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "assistant record officer": {
+    "position": "ASSISTANT RECORD OFFICER",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "it officer": {
     "position": "IT Officer",
     "closing_date": "Unknown",
@@ -86,36 +116,6 @@
   },
   "adjunct professor of probability and statistics": {
     "position": "ADJUNCT PROFESSOR OF PROBABILITY AND STATISTICS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of piston engines and propellers": {
-    "position": "ADJUNCT PROFESSOR OF PISTON ENGINES AND PROPELLERS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of operations research": {
-    "position": "ADJUNCT PROFESSOR OF OPERATIONS RESEARCH",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of introduction to emerging technology": {
-    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO EMERGING TECHNOLOGY",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of introduction to economics": {
-    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO ECONOMICS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of introduction to aeronautical science": {
-    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO AERONAUTICAL SCIENCE",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of introduction to aeronautical engineering": {
-    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO AERONAUTICAL ENGINEERING",
     "closing_date": "Unknown",
     "category": "Local"
   }
