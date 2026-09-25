@@ -19,103 +19,98 @@
     "closing_date": "Unknown",
     "category": "International"
   },
-  "industrial relation officer": {
-    "position": "Industrial Relation Officer",
+  "manager group fuel procurement & management": {
+    "position": "Manager Group Fuel Procurement & Management",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "medical receptionist": {
-    "position": "MEDICAL RECEPTIONIST",
+  "chef de partie": {
+    "position": "Chef De Partie",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "trainee - industrial electrician": {
-    "position": "TRAINEE - INDUSTRIAL ELECTRICIAN",
+  "children's activities coordinator": {
+    "position": "Children's Activities Coordinator",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "trainee - industrial mechanic": {
-    "position": "TRAINEE - INDUSTRIAL MECHANIC",
+  "commis iii": {
+    "position": "Commis III",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "nurse": {
-    "position": "Nurse",
+  "commis ii": {
+    "position": "Commis II",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "assistant record officer": {
-    "position": "ASSISTANT RECORD OFFICER",
+  "chef de partie- pastry": {
+    "position": "Chef De Partie- Pastry",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "it officer": {
-    "position": "IT Officer",
+  "pastry chef": {
+    "position": "Pastry Chef",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "assistant industrial mechanic": {
-    "position": "ASSISTANT INDUSTRIAL MECHANIC",
+  "business centre agent": {
+    "position": "Business Centre Agent",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "professor of mechanical engineering": {
-    "position": "Professor of Mechanical Engineering",
+  "meeting concierge": {
+    "position": "Meeting Concierge",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "professor of mathematics": {
-    "position": "Professor of Mathematics",
+  "hostess / host / receptionist": {
+    "position": "Hostess / Host / Receptionist",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "professor of software engineering": {
-    "position": "Professor of Software Engineering",
+  "concierge agent": {
+    "position": "Concierge Agent",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "professor of english": {
-    "position": "Professor of English",
+  "concierge supervisor": {
+    "position": "Concierge Supervisor",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "quality auditor": {
-    "position": "Quality Auditor",
+  "duty manager": {
+    "position": "Duty Manager",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "adjunct professor of data science for aviation management": {
-    "position": "ADJUNCT PROFESSOR OF DATA SCIENCE FOR AVIATION MANAGEMENT",
+  "bartender": {
+    "position": "Bartender",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "adjunct professor of critical thinking": {
-    "position": "ADJUNCT PROFESSOR OF CRITICAL THINKING",
+  "bus boy / girl": {
+    "position": "Bus Boy / GIRL",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "adjunct professor of computer programming using python": {
-    "position": "ADJUNCT PROFESSOR OF COMPUTER PROGRAMMING USING PYTHON",
+  "accountant": {
+    "position": "Accountant",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "adjunct professor of basic aerodynamics": {
-    "position": "ADJUNCT PROFESSOR OF BASIC AERODYNAMICS",
+  "executive chef": {
+    "position": "Executive Chef",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "adjunct professor of aircraft maintenance practice": {
-    "position": "ADJUNCT PROFESSOR OF AIRCRAFT MAINTENANCE PRACTICE",
+  "marketing officer": {
+    "position": "Marketing Officer",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "adjunct professor of research methods for engineers": {
-    "position": "ADJUNCT PROFESSOR OF RESEARCH METHODS FOR ENGINEERS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of probability and statistics": {
-    "position": "ADJUNCT PROFESSOR OF PROBABILITY AND STATISTICS",
+  "reservations supervisor": {
+    "position": "Reservations Supervisor",
     "closing_date": "Unknown",
     "category": "Local"
   }
