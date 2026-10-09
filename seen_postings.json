@@ -19,98 +19,103 @@
     "closing_date": "Unknown",
     "category": "International"
   },
-  "manager group fuel procurement & management": {
-    "position": "Manager Group Fuel Procurement & Management",
+  "assistant camera person & editor": {
+    "position": "ASSISTANT CAMERA PERSON & EDITOR",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "chef de partie": {
-    "position": "Chef De Partie",
+  "assistant cook": {
+    "position": "ASSISTANT COOK",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "children's activities coordinator": {
-    "position": "Children's Activities Coordinator",
+  "adjunct professor of data science for aviation management": {
+    "position": "ADJUNCT PROFESSOR OF DATA SCIENCE FOR AVIATION MANAGEMENT",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "commis iii": {
-    "position": "Commis III",
+  "adjunct professor of critical thinking": {
+    "position": "ADJUNCT PROFESSOR OF CRITICAL THINKING",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "commis ii": {
-    "position": "Commis II",
+  "adjunct professor of computer programming using python": {
+    "position": "ADJUNCT PROFESSOR OF COMPUTER PROGRAMMING USING PYTHON",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "chef de partie- pastry": {
-    "position": "Chef De Partie- Pastry",
+  "adjunct professor of basic aerodynamics": {
+    "position": "ADJUNCT PROFESSOR OF BASIC AERODYNAMICS",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "pastry chef": {
-    "position": "Pastry Chef",
+  "adjunct professor of aircraft maintenance practice": {
+    "position": "ADJUNCT PROFESSOR OF AIRCRAFT MAINTENANCE PRACTICE",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "business centre agent": {
-    "position": "Business Centre Agent",
+  "adjunct professor of research methods for engineers": {
+    "position": "ADJUNCT PROFESSOR OF RESEARCH METHODS FOR ENGINEERS",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "meeting concierge": {
-    "position": "Meeting Concierge",
+  "adjunct professor of probability and statistics": {
+    "position": "ADJUNCT PROFESSOR OF PROBABILITY AND STATISTICS",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "hostess / host / receptionist": {
-    "position": "Hostess / Host / Receptionist",
+  "adjunct professor of piston engines and propellers": {
+    "position": "ADJUNCT PROFESSOR OF PISTON ENGINES AND PROPELLERS",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "concierge agent": {
-    "position": "Concierge Agent",
+  "adjunct professor of operations research": {
+    "position": "ADJUNCT PROFESSOR OF OPERATIONS RESEARCH",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "concierge supervisor": {
-    "position": "Concierge Supervisor",
+  "adjunct professor of introduction to emerging technology": {
+    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO EMERGING TECHNOLOGY",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "duty manager": {
-    "position": "Duty Manager",
+  "adjunct professor of introduction to economics": {
+    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO ECONOMICS",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "bartender": {
-    "position": "Bartender",
+  "adjunct professor of introduction to aeronautical science": {
+    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO AERONAUTICAL SCIENCE",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "bus boy / girl": {
-    "position": "Bus Boy / GIRL",
+  "adjunct professor of introduction to aeronautical engineering": {
+    "position": "ADJUNCT PROFESSOR OF INTRODUCTION TO AERONAUTICAL ENGINEERING",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "accountant": {
-    "position": "Accountant",
+  "adjunct professor of general psychology": {
+    "position": "ADJUNCT PROFESSOR OF GENERAL PSYCHOLOGY",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "executive chef": {
-    "position": "Executive Chef",
+  "adjunct professor of engineering mechanics ii": {
+    "position": "ADJUNCT PROFESSOR OF ENGINEERING MECHANICS II",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "marketing officer": {
-    "position": "Marketing Officer",
+  "adjunct professor of engineering drawing i": {
+    "position": "ADJUNCT PROFESSOR OF ENGINEERING DRAWING I",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "reservations supervisor": {
-    "position": "Reservations Supervisor",
+  "adjunct professor of digital electronics and microprocessors": {
+    "position": "ADJUNCT PROFESSOR OF DIGITAL ELECTRONICS AND MICROPROCESSORS",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "adjunct professor of aviation security system": {
+    "position": "ADJUNCT PROFESSOR OF AVIATION SECURITY SYSTEM",
     "closing_date": "Unknown",
     "category": "Local"
   }
