@@ -19,6 +19,16 @@
     "closing_date": "Unknown",
     "category": "International"
   },
+  "driver": {
+    "position": "DRIVER",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "graphic designer": {
+    "position": "GRAPHIC DESIGNER",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "assistant camera person & editor": {
     "position": "ASSISTANT CAMERA PERSON & EDITOR",
     "closing_date": "Unknown",
@@ -106,16 +116,6 @@
   },
   "adjunct professor of engineering drawing i": {
     "position": "ADJUNCT PROFESSOR OF ENGINEERING DRAWING I",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of digital electronics and microprocessors": {
-    "position": "ADJUNCT PROFESSOR OF DIGITAL ELECTRONICS AND MICROPROCESSORS",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of aviation security system": {
-    "position": "ADJUNCT PROFESSOR OF AVIATION SECURITY SYSTEM",
     "closing_date": "Unknown",
     "category": "Local"
   }
