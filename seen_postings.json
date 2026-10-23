@@ -19,13 +19,13 @@
     "closing_date": "Unknown",
     "category": "International"
   },
-  "driver": {
-    "position": "DRIVER",
+  "graphic designer": {
+    "position": "GRAPHIC DESIGNER",
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "graphic designer": {
-    "position": "GRAPHIC DESIGNER",
+  "driver": {
+    "position": "DRIVER",
     "closing_date": "Unknown",
     "category": "Local"
   },
@@ -106,16 +106,6 @@
   },
   "adjunct professor of general psychology": {
     "position": "ADJUNCT PROFESSOR OF GENERAL PSYCHOLOGY",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of engineering mechanics ii": {
-    "position": "ADJUNCT PROFESSOR OF ENGINEERING MECHANICS II",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "adjunct professor of engineering drawing i": {
-    "position": "ADJUNCT PROFESSOR OF ENGINEERING DRAWING I",
     "closing_date": "Unknown",
     "category": "Local"
   }
