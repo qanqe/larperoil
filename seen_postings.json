@@ -19,6 +19,21 @@
     "closing_date": "Unknown",
     "category": "International"
   },
+  "security officer": {
+    "position": "Security Officer",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "kids club attendant": {
+    "position": "Kids Club Attendant",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "sous chef": {
+    "position": "Sous Chef",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "graphic designer": {
     "position": "GRAPHIC DESIGNER",
     "closing_date": "Unknown",
