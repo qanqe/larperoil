@@ -19,6 +19,51 @@
     "closing_date": "Unknown",
     "category": "International"
   },
+  "gym instructor": {
+    "position": "GYM INSTRUCTOR",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "part-time tennis coach": {
+    "position": "PART-TIME TENNIS COACH",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "purchasing manager": {
+    "position": "Purchasing Manager",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "ir officer": {
+    "position": "IR OFFICER",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "traditional coffee maker": {
+    "position": "Traditional Coffee Maker",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "different positions at chaka skylight hotel": {
+    "position": "Different Positions at Chaka Skylight Hotel",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "french & arabic language speaking customer service associate": {
+    "position": "French & Arabic Language Speaking Customer Service Associate",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "supervisor laundry": {
+    "position": "SUPERVISOR LAUNDRY",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
+  "assistant material controller": {
+    "position": "Assistant Material Controller",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "security officer": {
     "position": "Security Officer",
     "closing_date": "Unknown",
@@ -71,31 +116,6 @@
   },
   "jr. hr officer": {
     "position": "Jr. HR Officer",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "pharmacist": {
-    "position": "PHARMACIST",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "medical doctor": {
-    "position": "MEDICAL DOCTOR",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "driver": {
-    "position": "DRIVER",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "assistant camera person & editor": {
-    "position": "ASSISTANT CAMERA PERSON & EDITOR",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "assistant cook": {
-    "position": "ASSISTANT COOK",
     "closing_date": "Unknown",
     "category": "Local"
   }
