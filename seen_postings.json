@@ -19,6 +19,11 @@
     "closing_date": "Unknown",
     "category": "International"
   },
+  "jr. cctv surveillance officer": {
+    "position": "Jr. CCTV SURVEILLANCE OFFICER",
+    "closing_date": "Unknown",
+    "category": "Local"
+  },
   "gym instructor": {
     "position": "GYM INSTRUCTOR",
     "closing_date": "Unknown",
@@ -54,68 +59,8 @@
     "closing_date": "Unknown",
     "category": "Local"
   },
-  "supervisor laundry": {
-    "position": "SUPERVISOR LAUNDRY",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
   "assistant material controller": {
     "position": "Assistant Material Controller",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "security officer": {
-    "position": "Security Officer",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "kids club attendant": {
-    "position": "Kids Club Attendant",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "sous chef": {
-    "position": "Sous Chef",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "graphic designer": {
-    "position": "GRAPHIC DESIGNER",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "assistant a/c enginee test cell technician": {
-    "position": "ASSISTANT A/C ENGINEE TEST CELL TECHNICIAN",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "apprenticeship trainee – fire & rescue officer": {
-    "position": "Apprenticeship Trainee – Fire & Rescue Officer",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "civil engineer": {
-    "position": "CIVIL ENGINEER",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "gse/gtv body repair mechanic-ii": {
-    "position": "GSE/GTV BODY REPAIR MECHANIC-II",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "gse/gtv mechanic-ii": {
-    "position": "GSE/GTV MECHANIC-II",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "gse/gtv electrician-ii": {
-    "position": "GSE/GTV ELECTRICIAN-II",
-    "closing_date": "Unknown",
-    "category": "Local"
-  },
-  "jr. hr officer": {
-    "position": "Jr. HR Officer",
     "closing_date": "Unknown",
     "category": "Local"
   }
